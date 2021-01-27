@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+
+  <!-- ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡆⠄
+⣿⣿⣿⣿⣿⣿⣿⡟⣩⣭⣭⡈⠙⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠄
+⣿⣿⣿⣿⣿⣿⣿⢸⡿⠉⠉⢻⡆⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠄
+⣿⣿⣿⣿⣿⣿⣿⣦⡛⠢⠴⠛⠁⣸⣿⣿⣿⣿⡿⠛⢉⣉⣉⡙⢻⣿⣿⣿⣿⠄
+⣿⣿⣿⣿⣿⣿⣿⣷⣬⣭⣼⣷⣿⣿⣿⣿⣿⡏⢀⣾⠟⠛⢿⣿⣄⣿⣿⣿⣿⠄
+⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠄⠳⢀⣀⡼⢟⣼⣿⣿⣿⣿⠄
+⠄⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠄
+⠄⠘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡏⠄
+⠄⠄⢾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡝⢿⣿⣿⣿⣿⣿⣿⠇⢀
+⡆⠄⠄⠛⢿⣿⡿⠟⣿⣿⣿⣧⡉⠉⠉⠉⠛⠛⠛⢛⣿⣮⢻⣿⣿⣿⣿⡿⣠⣾
+⣷⠄⠄⠄⠄⣀⠄⢼⠿⣿⣿⣿⣿⣥⣀⣀⠄⣠⣤⣾⣿⣿⣇⠈⢿⣿⡟⢁⣿⣿
+⣿⡄⠄⠄⠠⣿⡆⠄⠄⠘⠉⠉⠉⠉⠉⠙⠩⠿⠍⠙⠻⠈⠉⣰⣿⣿⠁⣾⣿⣿
+⣿⡇⠄⠄⠄⠈⢿⣷⣶⣷⣦⣼⣻⣿⣷⣶⣶⣶⣒⣤⣤⣤⣴⣿⡯⡃⢸⣿⣿⣿
+⣿⡇⠄⠄⠄⠄⢸⣿⣿⣿⣿⡅⠄⠉⠉⠉⠉⠉⣻⣿⣿⣿⡿⠋⠉⣻⣿⣿⣿⣿
+⣿⣇⠄⠄⠄⠄⠄⠙⣿⣿⣿⣷⣤⣀⣀⣀⣀⣤⣿⣿⣿⣿⣟⠄⣸⣿⣿⣿⣿⣿
+
+** WARNING : SPAGGETI CODE BELOW ** -->
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/saas.sass">
+
+
+
+  <title>D3LTA</title>
+</head>
+
+<body>
+  <section class="Title-Section">
+
+    <div class="container navsec">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topbar" aria-controls="topbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <img class="navbar-brand rounded-circle pfp" src="images/D3LTA.jpg">
+
+        <div class="collapse navbar-collapse" id="topbar">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0 ">
+            <li class="nav-item active">
+              <a class="nav-link" href="#skl"><span class="H1-nav">.progress()</span><span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#pjs"><span class="H1-nav">.projects()</span><span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#"><span class="H1-nav">.social()</span><span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    </div>
+
+    <div class="container titsec">
+      <div class="row">
+        <div class="col-lg-6">
+           <div class="tagBall balls balz">
+            <span class="tag">Python</span>
+            <span class="tag">Java</span>
+            <span class="tag">MERN</span>
+            <span class="tag">Flutter</span>
+            <span class="tag">React</span>
+            <span class="tag">Django</span>
+            <span class="tag">Unity3D</span>
+            <span class="tag">Unreal</span>
+            <span class="tag">Flask</span>
+            <span class="tag">Wordpress</span>
+            <span class="tag">C#</span>
+            <span class="tag">TensorFlow</span>
+            <span class="tag">Kotlin</span>
+            <span class="tag">Godot</span>
+          </div>
+        </div>
+        
+        <div class="col-lg-6">
+          <h1 id="mainhead" class="mdhead">I am D3LTA</h1>
+          <h3 style="color :#f1f3f8"><p>I am a <span class="typed-text"></span><span class="cursor">&nbsp;</span></p></h3>
+
+       <div class="container">    
+      <div class="row"> 
+        <div class="col-lg-6">
+         
+        
+          <a href="#skl" class="neon-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            SKILLS
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a href="#pjs" class="neon-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            PROJECTS
+          </a>
+        </div>
+        </div>
+      </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="About-Me">
+
+    <div class="row ">
+      <div class="col-md-7">
+        <h2 class="About-Me-h2" style="color: #7DF9FF;">About ME</h2>
+        <p class="lead">I am Adnan aka "D3LTA" a fellow Developer.<br>
+          For the past 3 years, I've been developing Applications/Games on AndroidNative and Unity3D.
+          Recently I've ventured in to FullStack Development  and have been loving it ever since.Since my Go-to language is Python, I chose Django as my main tool.
+          Games/PC-Masterrace <strong> <3 </strong>    </p>
+      </div>
+      <div class="col-md-4">
+        <img src="images/Plainbg.jpg" class="img-thumbnail">
+      </div>
+      
+    </div>
+  </section>
+
+
+
+
+  <section class="skills" id="skl">
+
+    <div class="container">
+      <div class="row glass skills-row">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+
+            <h1 class ="skills-h1" style="color: #7DF9FF;">My Progress</h1>
+
+
+        <section>
+
+            
+               
+                <input class = "skills-rad" type="radio" name="switch-pos" id="pos-1">
+                <input class = "skills-rad" type="radio" name="switch-pos" id="pos-0">
+                <input class = "skills-rad" type="radio" name="switch-pos" id="pos-2" checked>
+                <input class = "skills-rad" type="radio" name="switch-pos" id="pos-3">
+              
+                <div class="chart">
+
+                    <div class="bar bar-30 cyan">
+                        <div class="face top">
+                            <div class="growing-bar"></div>
+                        </div>
+                        <div class="face side-0">
+                            <div class="growing-bar"></div>
+                        </div>
+                        <div class="face floor">
+                            <div class="growing-bar"></div>
+                        </div>
+                        <div class="face side-a"></div>
+                        <div class="face side-b"></div>
+                        <div class="face side-1">
+                            <div class="growing-bar"></div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+
+              </div>
+
+
+                
+                
+                <div class="container">
+                  <h2 style="margin: auto; padding-bottom: 20px;">Languages</h2>
+                
+                <nav class="actions">
+                  <div class="row">
+                  <div class="col-md-3 butpad">
+                    <label for="pos-0" class="skills-neon">Python </label>
+                  </div>
+                  <div class="col-md-3 butpad ">
+                    <label for="pos-1"class = "skills-neon" >JavaScript</label>
+                  </div>
+                  <div class="col-md-3 butpad ">
+                    <label for="pos-2"class = "skills-neon">C#/C/C++</label>
+                  </div>
+                  <div class="col-md-3 butpad ">
+                    <label for="pos-3"class = "skills-neon">Dart</label>
+                  </div>
+                </nav>
+              </div>
+              </div>
+            
+           
+        </section>
+
+    
+
+        </div>
+      
+      </div>
+    </div>
+  </section>
+
+
+
+   <section class="Projects" id="pjs">  
+    <h1 class="skills-h1" style="color: #7DF9FF;">Projects</h1>
+    
+    <div>
+
+        
+        <div class="containeer projs">
+          <div class="row">
+       <div class="col-md-4 ppp">
+        <div class="cards pjsd">
+            <div class="face face1">
+                <div class="content">
+                    <img src="images/steam.png">
+                    <h3>Steam</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p class="ct">My Steam Store page will soon be available with great Projects</p>
+                        <a href="#">Coming Soon</a>
+                </div>
+            </div>
+        </div>
+          </div>
+
+
+          <div class="col-md-4 ppp">
+        <div class="cards pjsd">
+            <div class="face face1">
+                <div class="content">
+                    <img src="images/playstore.png">
+                    <h3>Store</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p class="ct">Few of my works have been published in Google Playstore under the holding company Deltaverse Gaming Studio</p>
+                        <a href="http://play.google.com/store/apps/dev?id=6501574556682960754">PlayStore</a>
+                </div>
+            </div>
+        </div>
+          </div>
+
+
+          <div class="col-md-4 ppp">
+        <div class="cards pjsd">
+            <div class="face face1">
+                <div class="content">
+                    <img src="images/GithubF.png">
+                    <h3>GitHub</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p class ="ct">My Github page has few of my projects</p>
+                        <a href="https://github.com/adnandelta">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+        
+        
+
+      </div>
+    </div>
+
+     
+    
+
+
+
+
+
+  </section> 
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="page-footer font-small unique-color-dark pt-4">
+
+ 
+  <div class="container">
+
+  
+   <h4 class="skills-h1">Peace out</h4>
+    
+
+  </div>
+ 
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/">AdnanD3lta </a>
+  </div>
+  
+</footer>
+
+<!-- Footer -->
+
+
+
+
+
+
+
+
+
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  
+  <script src="js/cloudTag.js"></script>
+
+  <script type="text/javascript">
+  function balz_pls_smol(x) {
+
+    if (x.matches) { 
+      $(document).ready(function() {
+      $('.tagBall').cloudTag({
+        ballSize: 250
+      });
+    });
+    
+  } else {
+    $(document).ready(function() {
+      $('.tagBall').cloudTag({
+        ballSize: 200
+      });
+    });
+  }
+  }
+    var x = window.matchMedia("(min-width: 700px)")
+    balz_pls_smol(x) 
+    x.addListener(balz_pls_smol) 
+  </script>
+  <script src="js/typer.js"></script>
+  
+</body>
+
+
+</html>
